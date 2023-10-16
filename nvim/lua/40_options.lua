@@ -1,0 +1,14 @@
+vim.opt.ruler = true
+vim.opt.hlsearch = true
+vim.opt.laststatus = 2
+vim.opt.number = true
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.signcolumn = 'yes'
+vim.opt.hidden = true
+vim.opt.termguicolors = true
+vim.opt.exrc = true
+vim.opt.secure = true
+vim.opt.completeopt = 'menu,menuone,noselect'
+vim.opt.foldmethod = 'marker'
