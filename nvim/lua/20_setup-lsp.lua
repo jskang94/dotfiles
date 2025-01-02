@@ -9,6 +9,10 @@ vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
+  -- Disable lsp syntax highlight. See:
+  -- https://www.reddit.com/r/neovim/comments/109vgtl/how_to_disable_highlight_from_lsp/
+  client.server_capabilities.semanticTokensProvider = nil
+
   if lsp_status then
     lsp_status.on_attach(client)
   end
